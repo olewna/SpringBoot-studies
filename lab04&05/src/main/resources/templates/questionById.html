@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question from ChatGPT</title>
+</head>
+<body>
+        <div th:text="'ID: '+${questionById.id}"></div>
+        <div th:text="'Pytanie: '+${questionById.question}"></div>
+        <div th:text="'Odpowiedź: '+${questionById.answer}"></div>
+        <div th:text="'Data pytania: '+${#temporals.format(questionById.date, 'dd-MM-yyyy HH:mm')}"></div>
+        <div th:text="'Ilość zadań tego pytania: '+${questionById.timesAsked}"></div>
+        <div th:if="${questionById.answeredCorrect}">
+            <div>Odpowiedź była dobra :D</div>
+        </div>
+        <div th:unless="${questionById.answeredCorrect}">
+            <div>Odpowiedź była zła :(</div>
+        </div>
+        <a th:href="@{/question/delete/{id}(id=${questionById.getId()})}">Delete</a>
+</body>
+</html>

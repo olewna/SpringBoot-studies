@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+  <form th:object="${newQuestion}" th:action="@{/question}" method="post">
+    <div><input type="text" th:field="*{question}" required minlength="10"/></div>
+    <div><input type="text" th:field="*{answer}" required minlength="10"/></div>
+      <div><select th:field="*{answeredCorrect}" required>
+          <option th:value="true" th:text="'Chat dobrze odpowiedział'"></option>
+          <option th:value="false" th:text="'Chat źle odpowiedział'"></option>
+      </select></div>
+      <div><input type="number" th:field="*{timesAsked}" min="1" required/></div>
+    <div><input type="submit" value="Submit"></div>
+  </form>
+</body>
+</html>

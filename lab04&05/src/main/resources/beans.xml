@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="que" class="olewna.ug.edu.lab04.domain.ChatGPTQuestion">
+        <property name="question" value="Kim jest joe?"/>
+        <property name="answer" value="joe mama."/>
+        <property name="date" value="2022-05-12T15:10:00"/>
+    </bean>
+</beans>

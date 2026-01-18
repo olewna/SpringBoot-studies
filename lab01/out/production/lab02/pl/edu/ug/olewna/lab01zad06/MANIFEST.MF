@@ -1,0 +1,2 @@
+Manifest-Version: 1.0
+Main-Class: pl.edu.ug.olewna.lab01zad06.Hello

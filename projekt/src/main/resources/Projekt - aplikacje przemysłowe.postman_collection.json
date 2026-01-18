@@ -1,0 +1,319 @@
+{
+	"info": {
+		"_postman_id": "7e56c2a7-9445-4cc9-ae3b-8e13f55a721a",
+		"name": "Projekt - aplikacje przemysłowe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31452308"
+	},
+	"item": [
+		{
+			"name": "GET ALL QUESTIONS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/question"
+			},
+			"response": [
+				{
+					"name": "GET ALL QUESTIONS",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/question"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 05 Feb 2024 17:08:58 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"question\": \"Kim był Henryk Sienkiewicz?\",\n        \"date\": \"2024-02-05T18:08:55.671152\",\n        \"answeredCorrect\": true,\n        \"timesAsked\": 1124,\n        \"persons\": [\n            {\n                \"id\": 1,\n                \"firstname\": \"Oskar\",\n                \"lastname\": \"Lewna\",\n                \"email\": \"oskarlewna@email.com\"\n            },\n            {\n                \"id\": 2,\n                \"firstname\": \"John\",\n                \"lastname\": \"King\",\n                \"email\": \"jk2012@xd.pl\"\n            }\n        ],\n        \"goodAnswer\": {\n            \"id\": 1,\n            \"goodAnswer\": \"Był pisarzem polskim.\"\n        },\n        \"wrongAnswers\": [\n            {\n                \"id\": 1,\n                \"wrongAnswer\": \"Przepraszam, nie umiem udzielić odpowiedzi na to pytanie bo jestem tylko głupią sztuczną inteligencją.\"\n            }\n        ]\n    },\n    {\n        \"id\": 2,\n        \"question\": \"Ile jest godzin praktyk do odrobienia na Informatyce Praktycznej na UG?\",\n        \"date\": \"2024-02-05T18:08:55.671152\",\n        \"answeredCorrect\": false,\n        \"timesAsked\": 89,\n        \"persons\": [\n            {\n                \"id\": 1,\n                \"firstname\": \"Oskar\",\n                \"lastname\": \"Lewna\",\n                \"email\": \"oskarlewna@email.com\"\n            }\n        ],\n        \"goodAnswer\": null,\n        \"wrongAnswers\": [\n            {\n                \"id\": 2,\n                \"wrongAnswer\": \"Z raportów z poprzednich lat wynika, że 480 godzin.\"\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"question\": \"Ile osób zda ten semestr na UG?\",\n        \"date\": \"2024-02-05T18:08:55.671152\",\n        \"answeredCorrect\": true,\n        \"timesAsked\": 222,\n        \"persons\": [\n            {\n                \"id\": 2,\n                \"firstname\": \"John\",\n                \"lastname\": \"King\",\n                \"email\": \"jk2012@xd.pl\"\n            }\n        ],\n        \"goodAnswer\": {\n            \"id\": 2,\n            \"goodAnswer\": \"Nikt XD\"\n        },\n        \"wrongAnswers\": [\n            {\n                \"id\": 3,\n                \"wrongAnswer\": \"Statystycznie rzecz biorąc 84%.\"\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GET QUESTION BY PERSON ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/question/person/1"
+			},
+			"response": [
+				{
+					"name": "GET QUESTION BY PERSON ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/question/person/1"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 05 Feb 2024 17:09:19 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"question\": \"Kim był Henryk Sienkiewicz?\",\n        \"date\": \"2024-02-05T18:08:55.671152\",\n        \"answeredCorrect\": true,\n        \"timesAsked\": 1124,\n        \"persons\": [\n            {\n                \"id\": 1,\n                \"firstname\": \"Oskar\",\n                \"lastname\": \"Lewna\",\n                \"email\": \"oskarlewna@email.com\"\n            },\n            {\n                \"id\": 2,\n                \"firstname\": \"John\",\n                \"lastname\": \"King\",\n                \"email\": \"jk2012@xd.pl\"\n            }\n        ],\n        \"goodAnswer\": {\n            \"id\": 1,\n            \"goodAnswer\": \"Był pisarzem polskim.\"\n        },\n        \"wrongAnswers\": [\n            {\n                \"id\": 1,\n                \"wrongAnswer\": \"Przepraszam, nie umiem udzielić odpowiedzi na to pytanie bo jestem tylko głupią sztuczną inteligencją.\"\n            }\n        ]\n    },\n    {\n        \"id\": 2,\n        \"question\": \"Ile jest godzin praktyk do odrobienia na Informatyce Praktycznej na UG?\",\n        \"date\": \"2024-02-05T18:08:55.671152\",\n        \"answeredCorrect\": false,\n        \"timesAsked\": 89,\n        \"persons\": [\n            {\n                \"id\": 1,\n                \"firstname\": \"Oskar\",\n                \"lastname\": \"Lewna\",\n                \"email\": \"oskarlewna@email.com\"\n            }\n        ],\n        \"goodAnswer\": null,\n        \"wrongAnswers\": [\n            {\n                \"id\": 2,\n                \"wrongAnswer\": \"Z raportów z poprzednich lat wynika, że 480 godzin.\"\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GET QUESTION BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/question/3"
+			},
+			"response": [
+				{
+					"name": "GET QUESTION BY ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/question/3"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 05 Feb 2024 17:09:27 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"question\": \"Ile osób zda ten semestr na UG?\",\n    \"date\": \"2024-02-05T18:08:55.671152\",\n    \"answeredCorrect\": true,\n    \"timesAsked\": 222,\n    \"persons\": [\n        {\n            \"id\": 2,\n            \"firstname\": \"John\",\n            \"lastname\": \"King\",\n            \"email\": \"jk2012@xd.pl\"\n        }\n    ],\n    \"goodAnswer\": {\n        \"id\": 2,\n        \"goodAnswer\": \"Nikt XD\"\n    },\n    \"wrongAnswers\": [\n        {\n            \"id\": 3,\n            \"wrongAnswer\": \"Statystycznie rzecz biorąc 84%.\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "POST QUESTION",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"question\": \"Czy to pytanie sie doda?\",\r\n    \"date\": \"2024-02-05T17:22:42.504106\",\r\n    \"answeredCorrect\": false,\r\n    \"timesAsked\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/question"
+			},
+			"response": [
+				{
+					"name": "POST QUESTION",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"question\": \"Czy to pytanie sie doda?\",\r\n    \"date\": \"2024-02-05T17:22:42.504106\",\r\n    \"answeredCorrect\": false,\r\n    \"timesAsked\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/question"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Feb 2024 15:09:28 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"question\": \"Czy to pytanie sie doda?\",\n    \"date\": \"2024-02-05T17:22:42.504106\",\n    \"answeredCorrect\": false,\n    \"timesAsked\": 1,\n    \"persons\": null,\n    \"goodAnswer\": null,\n    \"wrongAnswers\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "PUT QUESTION",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"question\": \"Czy to pytanie sie doda?\",\r\n    \"date\": \"2024-02-06T17:22:42.504106\",\r\n    \"answeredCorrect\": false,\r\n    \"timesAsked\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/question/4"
+			},
+			"response": [
+				{
+					"name": "PUT QUESTION",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"question\": \"Czy to pytanie sie doda?\",\r\n    \"date\": \"2024-02-06T17:22:42.504106\",\r\n    \"answeredCorrect\": false,\r\n    \"timesAsked\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/question/4"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Feb 2024 15:10:24 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"question\": \"Czy to pytanie sie doda?\",\n    \"date\": \"2024-02-06T17:22:42.504106\",\n    \"answeredCorrect\": false,\n    \"timesAsked\": 2,\n    \"persons\": null,\n    \"goodAnswer\": null,\n    \"wrongAnswers\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "DELETE QUESTION",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/api/question/4"
+			},
+			"response": [
+				{
+					"name": "DELETE QUESTION",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/question/4"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Feb 2024 15:10:50 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"question\": \"Czy to pytanie sie doda?\",\n    \"date\": \"2024-02-06T17:22:42.504106\",\n    \"answeredCorrect\": false,\n    \"timesAsked\": 2,\n    \"persons\": [],\n    \"goodAnswer\": null,\n    \"wrongAnswers\": []\n}"
+				}
+			]
+		}
+	]
+}

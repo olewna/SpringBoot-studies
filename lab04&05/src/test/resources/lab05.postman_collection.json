@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "4f28bca5-f25e-4572-aead-d33f386d8f6e",
+		"name": "aplikacje przemyslowe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31452308"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api/question",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"question\": \"Jak to jest życ?\",\r\n    \"answer\": \"nie wiem :(\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/question",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"question"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/question",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/question",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"question"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/question/update/868e5fb8-8b3d-4129-86c5-d91652bfaec5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"868e5fb8-8b3d-4129-86c5-d91652bfaec5\",\r\n    \"question\": \"Jaki jest najlepszy kebab w Polsce?\",\r\n    \"answer\": \"Pewnie ten w Gdańsku Wrzeszcz kebab Mim\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/question/update/868e5fb8-8b3d-4129-86c5-d91652bfaec5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"question",
+						"update",
+						"868e5fb8-8b3d-4129-86c5-d91652bfaec5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/question/delete/6ec15c34-6106-4cc0-9edc-5476396ee813",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/question/delete/6ec15c34-6106-4cc0-9edc-5476396ee813",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"question",
+						"delete",
+						"6ec15c34-6106-4cc0-9edc-5476396ee813"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/question/fff5cf2d-4a01-4e74-bff5-96b85362b244",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/question/fff5cf2d-4a01-4e74-bff5-96b85362b244",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"question",
+						"fff5cf2d-4a01-4e74-bff5-96b85362b244"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
